@@ -6,5 +6,5 @@ camunda:
     mode: self-managed
     zeebe:
       enabled: true
-      grpc-address: http://localhost:26500
-      rest-address: http://localhost:8080
+      grpc-address: http://localhost:26500  # Where the workflow engine lives
+      rest-address: http://localhost:8080   # Where Operate/Tasklist UIs live

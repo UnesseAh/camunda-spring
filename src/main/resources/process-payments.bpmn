@@ -19,7 +19,7 @@
     <bpmn:sequenceFlow id="Flow_1nt3yvx" sourceRef="Activity_0jupuur" targetRef="Event_0his9sz" />
     <bpmn:scriptTask id="Activity_13efwub" name="Prepare transaction">
       <bpmn:extensionElements>
-        <zeebe:script expression="=total * 1.1" resultVariable="totalWithTax" />
+        <zeebe:script expression="=total * 1.6" resultVariable="totalWithTax" />
       </bpmn:extensionElements>
       <bpmn:incoming>Flow_0ygij06</bpmn:incoming>
       <bpmn:outgoing>Flow_03plgax</bpmn:outgoing>
@@ -54,14 +54,14 @@
       <bpmndi:BPMNShape id="Activity_0b37fzp_di" bpmnElement="Activity_13efwub">
         <dc:Bounds x="270" y="140" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="Association_00e7pcq_di" bpmnElement="Association_00e7pcq">
-        <di:waypoint x="518" y="140" />
-        <di:waypoint x="555" y="101" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Association_19bxtky_di" bpmnElement="Association_19bxtky">
-        <di:waypoint x="358" y="140" />
-        <di:waypoint x="382" y="115" />
-      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_0nmuopz_di" bpmnElement="TextAnnotation_0nmuopz">
+        <dc:Bounds x="530" y="60" width="100" height="41" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_0wowvpm_di" bpmnElement="TextAnnotation_0wowvpm">
+        <dc:Bounds x="370" y="60" width="100" height="55" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0ygij06_di" bpmnElement="Flow_0ygij06">
         <di:waypoint x="218" y="180" />
         <di:waypoint x="270" y="180" />
@@ -70,18 +70,18 @@
         <di:waypoint x="370" y="180" />
         <di:waypoint x="430" y="180" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="TextAnnotation_0nmuopz_di" bpmnElement="TextAnnotation_0nmuopz">
-        <dc:Bounds x="530" y="60" width="100" height="41" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_1nt3yvx_di" bpmnElement="Flow_1nt3yvx">
         <di:waypoint x="530" y="180" />
         <di:waypoint x="592" y="180" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="TextAnnotation_0wowvpm_di" bpmnElement="TextAnnotation_0wowvpm">
-        <dc:Bounds x="370" y="60" width="100" height="55" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_00e7pcq_di" bpmnElement="Association_00e7pcq">
+        <di:waypoint x="518" y="140" />
+        <di:waypoint x="555" y="101" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_19bxtky_di" bpmnElement="Association_19bxtky">
+        <di:waypoint x="358" y="140" />
+        <di:waypoint x="382" y="115" />
+      </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
